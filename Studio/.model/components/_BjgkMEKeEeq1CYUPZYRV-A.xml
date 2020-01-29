@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:array="http://virtubuil.com/schemas/array.ecore"
+    xmlns:comp="http://virtubuil.com/schemas/comp.ecore"
+    uuid="_BjgkMEKeEeq1CYUPZYRV-A" name="Component">
+  <variables xsi:type="comp:DeclaredVariable" uuid="_NDFwcEKfEeq1CYUPZYRV-A"
+      name="VariableDBTest" visibility="800" queryData="view1">
+    <domain uuid="_NDFwcUKfEeq1CYUPZYRV-A" name="local"
+        visibility="300">
+      <typeSet uuid="_NDFwckKfEeq1CYUPZYRV-A" bitSet="393231"/>
+      <values uuid="_VEC5sEKgEeq1CYUPZYRV-A" name="1"
+          editable="false" visibility="300">
+        <displayName uuid="_VEC5sUKgEeq1CYUPZYRV-A"
+            value="sample a"/>
+      </values>
+      <values uuid="_VEC5skKgEeq1CYUPZYRV-A" name="2"
+          editable="false" visibility="300">
+        <displayName uuid="_VEC5s0KgEeq1CYUPZYRV-A"
+            value="sample b"/>
+      </values>
+    </domain>
+    <connection href="../product_model.xml#_js5ywEKbEeqcEvdBOBfGRA"/>
+  </variables>
+  <logic uuid="_XAxFEEKgEeq1CYUPZYRV-A" name="Logic_Rules"
+      visibility="800">
+    <children xsi:type="array:TableRelation" uuid="_XXcfsEKgEeq1CYUPZYRV-A"
+        name="Table_Relation" visibility="800" queryData="select * from test;"
+        queryType="QUERY">
+      <columns uuid="_eG0hwEKgEeq1CYUPZYRV-A" name="id"
+          visibility="100" databaseAlias="id">
+        <cells uuid="_eG1I0EKgEeq1CYUPZYRV-A" value="1"
+            editable="false" disabled="true"/>
+        <cells uuid="_eG1I0kKgEeq1CYUPZYRV-A" value="2"
+            editable="false" disabled="true"/>
+      </columns>
+      <columns uuid="_eG0hwUKgEeq1CYUPZYRV-A" name="name"
+          visibility="100" databaseAlias="name">
+        <cells uuid="_eG1I0UKgEeq1CYUPZYRV-A" value="sample a"
+            editable="false" disabled="true"/>
+        <cells uuid="_eG1I00KgEeq1CYUPZYRV-A" value="sample b"
+            editable="false" disabled="true"/>
+      </columns>
+      <connection href="../product_model.xml#_8LU-kEKdEeq1CYUPZYRV-A"/>
+    </children>
+  </logic>
+  <geometry uuid="_BjgkMUKeEeq1CYUPZYRV-A" deletable="false"
+      name="root">
+    <parentPlugs uuid="_BjgkMkKeEeq1CYUPZYRV-A" name="ParentPlug"/>
+  </geometry>
+  <displayName uuid="_BjgkM0KeEeq1CYUPZYRV-A"/>
+</comp:Component>

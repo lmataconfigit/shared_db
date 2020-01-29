@@ -11,6 +11,7 @@
   <components href="components/_q8cPEFc5EeWo-40Qyxiobw.xml#_q8cPEFc5EeWo-40Qyxiobw"/>
   <components href="components/_KH3RkHABEeSk24oMIozLgA.xml#_KH3RkHABEeSk24oMIozLgA"/>
   <components href="components/_Z4wkQFc8EeWo-40Qyxiobw.xml#_Z4wkQFc8EeWo-40Qyxiobw"/>
+  <components href="components/_BjgkMEKeEeq1CYUPZYRV-A.xml#_BjgkMEKeEeq1CYUPZYRV-A"/>
   <world href="world.xml#_8fNuADTNEeSDp-UE12WecQ"/>
   <domains uuid="_2ZqEUEluEeSo87hK2eA7dQ" name="features">
     <typeSet uuid="_GIF6YqTqEea8d6P1JTl01w" bitSet="458767"/>
@@ -184,5 +185,7 @@
     <version uuid="_GIJkwKTqEea8d6P1JTl01w" major="1"/>
   </modeldescription>
   <databaseConnections uuid="_js5ywEKbEeqcEvdBOBfGRA"
-      name="Database_Connection" databaseURL="jdbc:mysql://localhost:3306/studiotesting"/>
+      name="Database_Connection" databaseURL="jdbc:mysql://localhost:3306/studio"/>
+  <databaseConnections uuid="_8LU-kEKdEeq1CYUPZYRV-A"
+      name="Database_ConnectionPrab" databaseURL="jdbc:mysql://localhost:3306/studio"/>
 </comp:ProductModel>
