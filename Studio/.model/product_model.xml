@@ -183,4 +183,6 @@
   <modeldescription uuid="_GIIWoKTqEea8d6P1JTl01w" pmid="BuildModel">
     <version uuid="_GIJkwKTqEea8d6P1JTl01w" major="1"/>
   </modeldescription>
+  <databaseConnections uuid="_js5ywEKbEeqcEvdBOBfGRA"
+      name="Database_Connection" databaseURL="jdbc:mysql://localhost:3306/studiotesting"/>
 </comp:ProductModel>
