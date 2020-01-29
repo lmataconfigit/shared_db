@@ -9,15 +9,20 @@
     <domain uuid="_NDFwcUKfEeq1CYUPZYRV-A" name="local"
         visibility="300">
       <typeSet uuid="_NDFwckKfEeq1CYUPZYRV-A" bitSet="393231"/>
-      <values uuid="_VEC5sEKgEeq1CYUPZYRV-A" name="1"
-          editable="false" visibility="300">
-        <displayName uuid="_VEC5sUKgEeq1CYUPZYRV-A"
-            value="sample a"/>
+      <values uuid="_7mxjMEKhEeqcEvdBOBfGRA" name="val1"
+          editable="false" visibility="300" preference="1">
+        <displayName uuid="_7mxjMUKhEeqcEvdBOBfGRA"
+            value="disp1"/>
       </values>
-      <values uuid="_VEC5skKgEeq1CYUPZYRV-A" name="2"
-          editable="false" visibility="300">
-        <displayName uuid="_VEC5s0KgEeq1CYUPZYRV-A"
-            value="sample b"/>
+      <values uuid="_7mxjMkKhEeqcEvdBOBfGRA" name="val2"
+          editable="false" visibility="300" preference="2">
+        <displayName uuid="_7mxjM0KhEeqcEvdBOBfGRA"
+            value="disp2"/>
+      </values>
+      <values uuid="_7mxjNEKhEeqcEvdBOBfGRA" name="val3"
+          editable="false" visibility="300" preference="3">
+        <displayName uuid="_7mxjNUKhEeqcEvdBOBfGRA"
+            value="disp3"/>
       </values>
     </domain>
     <connection href="../product_model.xml#_js5ywEKbEeqcEvdBOBfGRA"/>
@@ -25,23 +30,39 @@
   <logic uuid="_XAxFEEKgEeq1CYUPZYRV-A" name="Logic_Rules"
       visibility="800">
     <children xsi:type="array:TableRelation" uuid="_XXcfsEKgEeq1CYUPZYRV-A"
-        name="Table_Relation" visibility="800" queryData="select * from test;"
+        name="Table_Relation" visibility="800" queryData="select * from view1;"
         queryType="QUERY">
-      <columns uuid="_eG0hwEKgEeq1CYUPZYRV-A" name="id"
-          visibility="100" databaseAlias="id">
-        <cells uuid="_eG1I0EKgEeq1CYUPZYRV-A" value="1"
+      <columns uuid="_wcMhIEKhEeqcEvdBOBfGRA" name="value"
+          visibility="100" databaseAlias="value">
+        <cells uuid="_AlSro0KiEeqcEvdBOBfGRA" value="val1"
             editable="false" disabled="true"/>
-        <cells uuid="_eG1I0kKgEeq1CYUPZYRV-A" value="2"
+        <cells uuid="_AlSrpkKiEeqcEvdBOBfGRA" value="val2"
             editable="false" disabled="true"/>
+        <cells uuid="_AlSrqUKiEeqcEvdBOBfGRA" value="val3"
+            editable="false" disabled="true"/>
+        <cells uuid="_yubpgEKhEeqcEvdBOBfGRA" value="new"/>
       </columns>
-      <columns uuid="_eG0hwUKgEeq1CYUPZYRV-A" name="name"
-          visibility="100" databaseAlias="name">
-        <cells uuid="_eG1I0UKgEeq1CYUPZYRV-A" value="sample a"
+      <columns uuid="_wcMhIUKhEeqcEvdBOBfGRA" name="display"
+          visibility="100" databaseAlias="display">
+        <cells uuid="_AlSrpEKiEeqcEvdBOBfGRA" value="disp1"
             editable="false" disabled="true"/>
-        <cells uuid="_eG1I00KgEeq1CYUPZYRV-A" value="sample b"
+        <cells uuid="_AlSrp0KiEeqcEvdBOBfGRA" value="disp2"
             editable="false" disabled="true"/>
+        <cells uuid="_AlSrqkKiEeqcEvdBOBfGRA" value="disp3"
+            editable="false" disabled="true"/>
+        <cells uuid="_yubpgUKhEeqcEvdBOBfGRA" value=""/>
       </columns>
-      <connection href="../product_model.xml#_8LU-kEKdEeq1CYUPZYRV-A"/>
+      <columns uuid="_wcMhIkKhEeqcEvdBOBfGRA" name="priority"
+          visibility="100" databaseAlias="priority">
+        <cells uuid="_AlSrpUKiEeqcEvdBOBfGRA" value="1"
+            editable="false" disabled="true"/>
+        <cells uuid="_AlSrqEKiEeqcEvdBOBfGRA" value="2"
+            editable="false" disabled="true"/>
+        <cells uuid="_AlSrq0KiEeqcEvdBOBfGRA" value="3"
+            editable="false" disabled="true"/>
+        <cells uuid="_yubpgkKhEeqcEvdBOBfGRA" value=""/>
+      </columns>
+      <connection href="../product_model.xml#_js5ywEKbEeqcEvdBOBfGRA"/>
     </children>
   </logic>
   <geometry uuid="_BjgkMUKeEeq1CYUPZYRV-A" deletable="false"
